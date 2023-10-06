@@ -1,0 +1,12 @@
+<a href="{{ .RelPermalink }}">
+    <article class="blog_item">
+        <div class="blog_item_img">
+            {{ if .Params.image }}<img class="card-img rounded-0" loading="lazy" src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
+            <p class="blog_item_date mb2 ">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
+        </div>
+        <div class="blog_details">
+            <h4 class="mt-2 d-inline-block">{{ .Title }}</h4>
+            <p class="mt-2 mb0">{{ .Description }}</p>
+        </div>
+    </article>
+</a>

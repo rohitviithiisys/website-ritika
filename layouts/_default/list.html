@@ -1,0 +1,60 @@
+{{ define "main" }}
+<!-- <div class="our_products-banner display">
+    <div class="container">
+        <div class="row">
+            <h1 class="breadcumb-title">Blog</h1>
+            <p>Welcome to our blog!</p>
+        </div>
+    </div>
+</div>
+
+<div class="main-banner-phone display-phone">
+    <div class="container">
+        <div class="row">
+            <h1 class="breadcumb-title h1-phone">Blog</h1>
+            <p>Welcome to our blog!</p>
+        </div>
+    </div>
+</div> -->
+<!-- Hero Start -->
+<div class="slider-area ">
+    <div class="slider-height2 d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="hero-cap">
+                        <h2>Blog Area</h2>
+                        <nav aria-label="breadcrumb ">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Blog</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+<div class="container mt-5 mb-5 " style="margin-top: 40px;">
+    <div class="row ">
+        <div class="col-sm-9 ">
+            <label class=""><b>OUR BLOG</b></label>
+            <h2 style="margin-bottom: 30px; ">Latest News </h2>
+        </div>
+    </div>
+    <div class="row" id="showresults">
+        {{ range (.Paginator 1000).Pages.ByPublishDate.Reverse }}
+        <div class="col-lg-4 col-md-6 col-12 phone-fast mt-4 filter {{range .Params.categories}}{{.}} {{end}}">
+            <div class="grids blog-shadow ">
+                {{ .Render "li"}}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>
+
+{{end}}
