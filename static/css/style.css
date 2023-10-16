@@ -6325,3 +6325,13 @@ del {
 .switch-wrap {
     margin-bottom: 10px
 }
+
+
+/* .Forms__FormsViralityContainer-sc-11vy283-0 {
+    display: none !important;
+} */
+
+#contact .iCJCmn {
+    line-height: 30px;
+    display: none !important;
+}
