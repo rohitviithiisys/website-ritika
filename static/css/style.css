@@ -2346,8 +2346,8 @@ hr {
 }
 
 .footer-padding {
-    padding-top: 150px;
-    padding-bottom: 136px
+    padding-top: 50px;
+    padding-bottom: 10px
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3427,12 +3427,15 @@ hr {
 }
 
 .footer-area {
-    background: #080827
+    /* background: #080827 */
+    background-image: url(../img/hero/hero2.jpg);
 }
 
+
+/* 
 .footer-area .footer-top .footer-top-cap img {
     margin-bottom: 30px
-}
+} */
 
 .footer-area .footer-top .footer-top-cap span a {
     font-size: 50px;
